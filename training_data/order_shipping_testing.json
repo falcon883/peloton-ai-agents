@@ -1,0 +1,86 @@
+{
+  "agent": "Order/Shipping AI Agent",
+  "testing_data": [
+    {
+      "id": "OS-TS-001",
+      "user_story": "US1",
+      "input": "When will my order arrive?",
+      "expected_output_criteria": [
+        "Looks up order and returns current tracking status",
+        "Provides estimated delivery date or window",
+        "States last known scan location"
+      ],
+      "should_not_contain": [
+        "I cannot track",
+        "check fedex.com yourself"
+      ]
+    },
+    {
+      "id": "OS-TS-002",
+      "user_story": "US1",
+      "input": "Can I change my delivery address after my order has shipped?",
+      "expected_output_criteria": [
+        "Explains carrier policy on address changes after shipment",
+        "Provides available options (intercept, redirect)",
+        "States any associated fees or limitations"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "OS-TS-003",
+      "user_story": "US2",
+      "input": "I want to return an item I bought last week. How do I start?",
+      "expected_output_criteria": [
+        "Confirms order is within return window",
+        "Initiates return process",
+        "Provides prepaid label or next steps"
+      ],
+      "should_not_contain": [
+        "return window has expired",
+        "cannot process"
+      ]
+    },
+    {
+      "id": "OS-TS-004",
+      "user_story": "US2",
+      "input": "My Peloton apparel arrived in the wrong size. Can I exchange it?",
+      "expected_output_criteria": [
+        "Confirms exchange eligibility",
+        "Explains exchange vs refund options",
+        "Initiates label generation or provides next step"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "OS-TS-005",
+      "user_story": "US3",
+      "input": "My order hasn't shipped after 7 days.",
+      "expected_output_criteria": [
+        "Identifies that the delay exceeds SLA",
+        "Creates or mentions an escalation ticket",
+        "Provides revised ETA",
+        "Communicates apology and follow-up action"
+      ],
+      "should_not_contain": [
+        "normal",
+        "please wait",
+        "nothing I can do"
+      ]
+    },
+    {
+      "id": "OS-TS-006",
+      "user_story": "US3",
+      "input": "My package says delivered but I never received it.",
+      "expected_output_criteria": [
+        "Acknowledges the discrepancy",
+        "Initiates a carrier investigation or trace",
+        "Provides resolution timeline",
+        "Offers replacement or refund option"
+      ],
+      "should_not_contain": [
+        "check with neighbors only",
+        "not our problem"
+      ]
+    }
+  ]
+}

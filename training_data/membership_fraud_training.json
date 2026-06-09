@@ -1,0 +1,89 @@
+{
+  "agent": "Membership/Fraud Detection AI Agent",
+  "training_data": [
+    {
+      "id": "MF-TR-001",
+      "user_story": "US1 - Suspicious Device Activity",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I see a login from a location I don't recognize. What should I do?"
+        },
+        {
+          "role": "assistant",
+          "content": "I've checked your account activity. There was a login on November 14th from Seattle, WA on an unrecognized Windows PC \u2014 this device has never been associated with your account before.\n\nHere's what I recommend:\n1. **Change your password immediately** \u2014 I can walk you through this.\n2. **Enable two-factor authentication** if you haven't already.\n3. **Revoke the unrecognized device** \u2014 I can do this now with your confirmation.\n\nWould you like me to revoke access for that Seattle device? I'll need you to confirm with your account email first."
+        }
+      ]
+    },
+    {
+      "id": "MF-TR-002",
+      "user_story": "US1 - Suspicious Device Activity",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Show me all devices that have accessed my account in the last 30 days."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are all 3 devices that accessed your account in the last 30 days:\n\n| Device | OS | Location | Last Login | Status |\n|---|---|---|---|---|\n| iPhone 15 Pro | iOS 17 | Boston, MA | Nov 20 | \u2705 Recognized |\n| MacBook Pro | macOS 14 | Boston, MA | Nov 18 | \u2705 Recognized |\n| Unknown Windows PC | Windows 11 | Seattle, WA | Nov 14 | \u26a0\ufe0f Unrecognized |\n\nThe Windows PC in Seattle is flagged as unrecognized. I recommend revoking its access. Shall I proceed?"
+        }
+      ]
+    },
+    {
+      "id": "MF-TR-003",
+      "user_story": "US2 - Password Reset",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm locked out of my Peloton account after entering the wrong password too many times."
+        },
+        {
+          "role": "assistant",
+          "content": "No problem \u2014 I can help you regain access securely. Here's how the process works:\n\n1. I'll send a one-time verification code (OTP) to your registered email address.\n2. You'll enter that code to verify your identity.\n3. Once verified, you'll be prompted to set a new password.\n\nCould you confirm the email address on your account so I can send the code? I'll mask it for privacy once you provide it."
+        }
+      ]
+    },
+    {
+      "id": "MF-TR-004",
+      "user_story": "US2 - Password Reset",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I entered the OTP code but it says it's invalid."
+        },
+        {
+          "role": "assistant",
+          "content": "OTP codes expire after 10 minutes and are single-use. A few things to check:\n- Make sure you're using the most recent code (check that you didn't accidentally use an older email).\n- Confirm there are no extra spaces when entering the code.\n\nI can send you a fresh OTP right now. Would you like me to resend it to your registered email? Note: after 3 failed attempts, the account will require manual verification with our support team for security purposes."
+        }
+      ]
+    },
+    {
+      "id": "MF-TR-005",
+      "user_story": "US3 - Membership Tier Comparison",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the difference between All-Access Membership and Peloton App+?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a direct comparison:\n\n| Feature | All-Access ($44/mo) | Peloton App+ ($24/mo) |\n|---|---|---|\n| Live classes | \u2705 Yes | \u274c No |\n| On-demand classes | \u2705 Unlimited | \u2705 Unlimited |\n| User profiles | Up to 2 | 1 |\n| Leaderboard | \u2705 Yes | \u274c No |\n| Works without equipment | \u274c Requires Peloton gear | \u2705 Any device/gym equipment |\n| Performance tracking | Full | Basic |\n| Price | $44/month | $24/month |\n\n**Recommendation:** If you own Peloton equipment and use live classes, All-Access is worth it. If you primarily use the app on a phone or gym treadmill, App+ saves you $240/year."
+        }
+      ]
+    },
+    {
+      "id": "MF-TR-006",
+      "user_story": "US3 - Membership Tier Comparison",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I only use the Peloton app on my phone \u2014 no equipment. Is All-Access worth it for me?"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your usage pattern (app-only, no Peloton equipment), the Peloton App+ tier at $24/month would be a better fit and save you $240 per year. You'd retain access to the full on-demand class library including cycling, running, yoga, strength, and meditation. The main things you'd lose vs. All-Access are: live classes, the leaderboard, and the ability to add a second user profile. If those features aren't part of your routine, App+ provides equal value at a lower cost. Would you like a link to manage your subscription?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "agent": "Membership/Fraud Detection AI Agent",
+  "testing_data": [
+    {
+      "id": "MF-TS-001",
+      "user_story": "US1",
+      "input": "I think someone else is using my Peloton account.",
+      "expected_output_criteria": [
+        "Retrieves and presents recent device/login activity",
+        "Flags unrecognized devices",
+        "Offers to revoke access and/or change password"
+      ],
+      "should_not_contain": [
+        "ignore it",
+        "that's probably fine",
+        "not possible"
+      ]
+    },
+    {
+      "id": "MF-TS-002",
+      "user_story": "US1",
+      "input": "Who accessed my Peloton account from an unrecognized device, and how can I secure it immediately?",
+      "expected_output_criteria": [
+        "Lists unrecognized device(s) with location and date",
+        "Provides immediate steps to secure the account",
+        "Offers device revocation"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "MF-TS-003",
+      "user_story": "US2",
+      "input": "My account is locked after too many failed login attempts.",
+      "expected_output_criteria": [
+        "Initiates identity verification process",
+        "Explains OTP step",
+        "Confirms account unlock after successful verification"
+      ],
+      "should_not_contain": [
+        "call us",
+        "wait 24 hours",
+        "I cannot help"
+      ]
+    },
+    {
+      "id": "MF-TS-004",
+      "user_story": "US2",
+      "input": "I forgot my password and can't get into my account.",
+      "expected_output_criteria": [
+        "Asks for email to send OTP",
+        "Explains verification process",
+        "Provides estimated time to regain access"
+      ],
+      "should_not_contain": [
+        "impossible",
+        "contact support only"
+      ]
+    },
+    {
+      "id": "MF-TS-005",
+      "user_story": "US3",
+      "input": "I'm on All-Access and thinking about downgrading. What would I lose?",
+      "expected_output_criteria": [
+        "Lists features exclusive to All-Access that would be lost",
+        "States price difference",
+        "Gives a recommendation based on usage patterns"
+      ],
+      "should_not_contain": [
+        "don't downgrade",
+        "I cannot advise"
+      ]
+    },
+    {
+      "id": "MF-TS-006",
+      "user_story": "US3",
+      "input": "Can I share my Peloton membership with a family member?",
+      "expected_output_criteria": [
+        "Explains profile-sharing capabilities per membership tier",
+        "States max profiles allowed",
+        "Provides instructions or next steps"
+      ],
+      "should_not_contain": []
+    }
+  ]
+}

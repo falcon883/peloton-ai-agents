@@ -1,0 +1,81 @@
+{
+  "agent": "Business/Marketing AI Agent",
+  "testing_data": [
+    {
+      "id": "BM-TS-001",
+      "user_story": "US1",
+      "input": "How did our email campaign ROI compare to paid social in Q4?",
+      "expected_output_criteria": [
+        "Compares email vs paid social ROI with specific percentage or dollar figures",
+        "Identifies the higher-performing channel",
+        "Includes a recommendation for future budget allocation"
+      ],
+      "should_not_contain": [
+        "I don't know",
+        "I cannot access",
+        "no data available"
+      ]
+    },
+    {
+      "id": "BM-TS-002",
+      "user_story": "US1",
+      "input": "Which ad format performed best across all Q3 campaigns?",
+      "expected_output_criteria": [
+        "Names a specific ad format (video, carousel, static, etc.)",
+        "Provides engagement or conversion metric",
+        "Gives actionable recommendation"
+      ],
+      "should_not_contain": [
+        "unclear",
+        "not sure"
+      ]
+    },
+    {
+      "id": "BM-TS-003",
+      "user_story": "US2",
+      "input": "What content worked best for member re-engagement last year?",
+      "expected_output_criteria": [
+        "Identifies top-performing content type for re-engagement",
+        "Includes engagement rate or metric",
+        "Suggests application to upcoming calendar"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "BM-TS-004",
+      "user_story": "US2",
+      "input": "We're launching a new strength training line. What content strategy do you recommend?",
+      "expected_output_criteria": [
+        "Recommends at least 2 specific content themes or approaches",
+        "References past performance data or trends",
+        "Tailored to strength training category"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "BM-TS-005",
+      "user_story": "US3",
+      "input": "Compare Peloton's subscriber growth to NordicTrack and Echelon over the last 2 years.",
+      "expected_output_criteria": [
+        "Provides YoY growth rates for all 3 brands",
+        "Includes absolute membership numbers",
+        "Offers competitive positioning insight"
+      ],
+      "should_not_contain": [
+        "I cannot compare",
+        "no information available"
+      ]
+    },
+    {
+      "id": "BM-TS-006",
+      "user_story": "US3",
+      "input": "What is Peloton's current market position in the connected fitness industry?",
+      "expected_output_criteria": [
+        "States Peloton's market share or subscriber base size",
+        "Mentions at least one competitor",
+        "Notes trend (growing/declining/stable)"
+      ],
+      "should_not_contain": []
+    }
+  ]
+}

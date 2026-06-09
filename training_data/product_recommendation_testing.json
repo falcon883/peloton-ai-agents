@@ -1,0 +1,83 @@
+{
+  "agent": "Product Recommendation AI Agent",
+  "testing_data": [
+    {
+      "id": "PR-TS-001",
+      "user_story": "US1",
+      "input": "Recommend running gear for someone training for a 5K.",
+      "expected_output_criteria": [
+        "Recommends at least 2 relevant Peloton products",
+        "Includes prices for all recommended items",
+        "Checks and mentions in-stock status"
+      ],
+      "should_not_contain": [
+        "I cannot recommend",
+        "no products available"
+      ]
+    },
+    {
+      "id": "PR-TS-002",
+      "user_story": "US1",
+      "input": "What yoga accessories does Peloton sell?",
+      "expected_output_criteria": [
+        "Lists available yoga accessories with names and prices",
+        "Notes stock availability",
+        "Provides brief description per item"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "PR-TS-003",
+      "user_story": "US2",
+      "input": "Is the Bike or Bike+ better for beginners?",
+      "expected_output_criteria": [
+        "Provides a clear recommendation for beginners",
+        "Explains why based on features",
+        "Mentions price difference"
+      ],
+      "should_not_contain": [
+        "both are the same",
+        "no difference"
+      ]
+    },
+    {
+      "id": "PR-TS-004",
+      "user_story": "US2",
+      "input": "Does the Peloton Bike+ work with Apple Watch?",
+      "expected_output_criteria": [
+        "Confirms Apple GymKit compatibility for Bike+",
+        "Notes that Bike (standard) does not have GymKit",
+        "Explains what GymKit integration enables"
+      ],
+      "should_not_contain": [
+        "I'm not sure",
+        "check the website"
+      ]
+    },
+    {
+      "id": "PR-TS-005",
+      "user_story": "US3",
+      "input": "What are the best-selling accessories this month?",
+      "expected_output_criteria": [
+        "Lists at least 3 top-selling accessories",
+        "Includes prices",
+        "Notes any current promotions or discounts"
+      ],
+      "should_not_contain": [
+        "no data available",
+        "I cannot access sales data"
+      ]
+    },
+    {
+      "id": "PR-TS-006",
+      "user_story": "US3",
+      "input": "A customer is buying a Bike+. What's the best bundle to offer them?",
+      "expected_output_criteria": [
+        "Recommends at least 2 complementary products",
+        "Provides co-purchase rate or data-backed rationale",
+        "Mentions any available bundle discounts"
+      ],
+      "should_not_contain": []
+    }
+  ]
+}

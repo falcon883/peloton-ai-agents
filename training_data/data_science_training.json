@@ -1,0 +1,89 @@
+{
+  "agent": "Data Science AI Agent",
+  "training_data": [
+    {
+      "id": "DS-TR-001",
+      "user_story": "US1 - Cycling Performance Analysis",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Analyze my last 30 indoor cycling classes and suggest ways to improve my average output and cadence."
+        },
+        {
+          "role": "assistant",
+          "content": "I reviewed your last 30 cycling sessions. Here's what I found:\n\n**Output:** Your average output was 203W, up from 185W in your first 10 classes \u2014 a solid 9.7% improvement. Your best sessions came after consecutive-day pairings (riding two days in a row), suggesting your body adapts well to back-to-back training.\n\n**Cadence:** Your average cadence is 84 RPM, which is good. However, during flat road segments you drop to ~78 RPM. Maintaining 85\u201390 RPM on flats will help build leg turnover efficiency.\n\n**Recommendations:**\n1. Add one Power Zone Endurance ride per week \u2014 it'll build your aerobic base and raise your sustainable output.\n2. Focus on cadence drills during warm-up (high RPM at low resistance for 5 min).\n3. You tend to skip Friday classes \u2014 adding even a 20-min recovery ride could improve your weekly consistency score."
+        }
+      ]
+    },
+    {
+      "id": "DS-TR-002",
+      "user_story": "US1 - Cycling Performance Analysis",
+      "messages": [
+        {
+          "role": "user",
+          "content": "How does my average output compare to others in my age group?"
+        },
+        {
+          "role": "assistant",
+          "content": "Your average output of 203W places you in the 68th percentile among Peloton members in the 30\u201339 age bracket who take 3+ cycling classes per week. The median for your cohort is 187W, and the top quartile starts at 240W. You're performing above average \u2014 to reach the top quartile, focus on increasing your output during high-resistance intervals, where you currently average 15% below your cohort's top performers."
+        }
+      ]
+    },
+    {
+      "id": "DS-TR-003",
+      "user_story": "US2 - Workout Consistency",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I feel like I've been inconsistent lately. Can you show me my workout patterns over the last 3 months?"
+        },
+        {
+          "role": "assistant",
+          "content": "Looking at your workout history over the last 12 weeks:\n\n- **Strong weeks (4\u20135 workouts):** Weeks 1, 2, 6, 7, 10, 11\n- **Low weeks (0\u20131 workouts):** Weeks 4, 5, 8, 9\n\nYou're most active on Tuesdays and Thursdays; Fridays and Sundays see the fewest completions. The dips in weeks 4\u20135 and 8\u20139 align with the end of the month \u2014 a pattern some members experience due to schedule pressure. \n\nSuggestion: Schedule 20-min shorter classes on your lower-energy days (Fri/Sun) rather than skipping entirely. Consistency beats intensity for long-term progress."
+        }
+      ]
+    },
+    {
+      "id": "DS-TR-004",
+      "user_story": "US2 - Workout Consistency",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the best workout schedule for someone who can only exercise 4 days a week?"
+        },
+        {
+          "role": "assistant",
+          "content": "For a 4-day weekly schedule, a balanced approach based on member performance data would be:\n\n- **Day 1 (Mon):** 30-min Moderate Cycling or Strength \u2014 higher energy start\n- **Day 2 (Wed):** 20\u201330 min HIIT or Power Zone \u2014 mid-week intensity\n- **Day 3 (Fri):** 20-min Yoga Flow or Stretching \u2014 active recovery\n- **Day 4 (Sat/Sun):** 45-min endurance ride or long run \u2014 weekend performance session\n\nMembers following a similar 4-day structure in our data show 23% better 90-day retention compared to unstructured scheduling. Rest days between sessions 1\u20132 and 2\u20133 aid muscle recovery."
+        }
+      ]
+    },
+    {
+      "id": "DS-TR-005",
+      "user_story": "US3 - Demographic Class Report",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What are the most popular class types for members aged 25\u201334 in the Northeast?"
+        },
+        {
+          "role": "assistant",
+          "content": "For members aged 25\u201334 in the Northeast region (128,450 members analyzed), the top 5 class types by participation rate are:\n\n1. 20-min Power Zone Cycling \u2013 18.4%\n2. 30-min HIIT Cycling \u2013 15.2%\n3. 20-min Beginner Running \u2013 12.1%\n4. 10-min Stretching \u2013 10.8%\n5. 45-min Advanced Cycling \u2013 9.3%\n\nThis segment strongly favors cycling and short-to-medium duration classes. Beginner Running is notably high for this region \u2014 likely driven by treadmill adoption in urban areas. Instructor scheduling for Alex Toussaint and Denis Morton classes should be prioritized for this cohort."
+        }
+      ]
+    },
+    {
+      "id": "DS-TR-006",
+      "user_story": "US3 - Demographic Class Report",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Which instructors have the highest completion rates for 30-minute rides?"
+        },
+        {
+          "role": "assistant",
+          "content": "For 30-minute cycling classes, the top 5 instructors by class completion rate (members who finish the full class) are:\n\n1. Alex Toussaint \u2013 94.2% completion rate\n2. Cody Rigsby \u2013 92.8%\n3. Denis Morton \u2013 91.5%\n4. Emma Lovewell \u2013 90.7%\n5. Ben Alldis \u2013 89.3%\n\nCompletion rates are influenced by class energy, music selection, and instructor motivational style. Alex Toussaint's hip-hop focused rides consistently score highest across both completion and output performance metrics."
+        }
+      ]
+    }
+  ]
+}

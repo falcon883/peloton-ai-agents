@@ -1,0 +1,84 @@
+{
+  "agent": "Data Science AI Agent",
+  "testing_data": [
+    {
+      "id": "DS-TS-001",
+      "user_story": "US1",
+      "input": "Show me my fitness progress over the last 3 months.",
+      "expected_output_criteria": [
+        "Provides trend analysis of at least one metric (output, cadence, or duration)",
+        "Shows week-over-week or month-over-month progress",
+        "Includes at least one actionable improvement suggestion"
+      ],
+      "should_not_contain": [
+        "no data",
+        "cannot retrieve"
+      ]
+    },
+    {
+      "id": "DS-TS-002",
+      "user_story": "US1",
+      "input": "I want to improve my cadence. What should I focus on?",
+      "expected_output_criteria": [
+        "Gives specific cadence target (RPM)",
+        "Provides at least one concrete drill or class recommendation",
+        "References member's current cadence if available"
+      ],
+      "should_not_contain": [
+        "consult a doctor",
+        "I cannot help with fitness"
+      ]
+    },
+    {
+      "id": "DS-TS-003",
+      "user_story": "US2",
+      "input": "Why did I stop working out consistently in October?",
+      "expected_output_criteria": [
+        "Identifies specific low-activity weeks",
+        "Offers a pattern-based explanation (not personal assumptions)",
+        "Provides a forward-looking scheduling suggestion"
+      ],
+      "should_not_contain": [
+        "lazy",
+        "failure",
+        "you should have"
+      ]
+    },
+    {
+      "id": "DS-TS-004",
+      "user_story": "US2",
+      "input": "What days of the week do I work out the most?",
+      "expected_output_criteria": [
+        "States top 2 most active days",
+        "States least active days",
+        "Recommends schedule adjustment if applicable"
+      ],
+      "should_not_contain": []
+    },
+    {
+      "id": "DS-TS-005",
+      "user_story": "US3",
+      "input": "Generate a report on the top 10 class types for members aged 25\u201334 in the Northeast.",
+      "expected_output_criteria": [
+        "Lists all 10 class types ranked",
+        "Includes participation percentages",
+        "Notes any notable regional or demographic trends"
+      ],
+      "should_not_contain": [
+        "top 5 only",
+        "cannot generate report"
+      ]
+    },
+    {
+      "id": "DS-TS-006",
+      "user_story": "US3",
+      "input": "Which instructor has the best member retention in their class series?",
+      "expected_output_criteria": [
+        "Names at least one instructor",
+        "Provides a retention or completion metric",
+        "Explains what drives their performance"
+      ],
+      "should_not_contain": []
+    }
+  ]
+}

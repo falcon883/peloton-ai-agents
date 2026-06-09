@@ -1,0 +1,89 @@
+{
+  "agent": "Product Recommendation AI Agent",
+  "training_data": [
+    {
+      "id": "PR-TR-001",
+      "user_story": "US1 - Yoga Accessory Recommendations",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What accessories do you recommend for someone who does yoga 4 times a week?"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your yoga frequency (4x/week at an intermediate level), here are my top 3 recommendations:\n\n1. **Peloton Reversible Yoga Mat \u2013 $88** \n   6mm dual-layer cushioning, non-slip surface on both sides. Ideal for your Power Yoga and Yoga Flow classes. Currently in stock.\n\n2. **Peloton Yoga Block Set (2 pack) \u2013 $35** \n   High-density EVA foam blocks \u2014 great for alignment support in the restorative and flow classes you've been taking recently. In stock.\n\n3. **Peloton Yoga Strap \u2013 $22** \n   8ft cotton strap with a metal D-ring buckle. Used in several of Aditi Shah's flexibility-focused classes you attend. In stock.\n\nAll 3 together come to $145, and they're compatible with your current class selections. Want me to add any to your cart?"
+        }
+      ]
+    },
+    {
+      "id": "PR-TR-002",
+      "user_story": "US1 - Yoga Accessory Recommendations",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Is the Peloton Yoga Towel worth buying?"
+        },
+        {
+          "role": "assistant",
+          "content": "The Peloton Yoga Towel ($30) is a microfiber mat-sized towel primarily designed for hot yoga or high-intensity flows where you sweat heavily. Based on your class history, you mostly take Power Yoga and Restorative Yoga \u2014 these are moderate-intensity sessions where a full mat towel is typically not necessary. A standard hand towel would likely be sufficient for your current routine. That said, if you plan to try any hot yoga or bootcamp classes in the future, it's a great investment. Note: it's currently out of stock, so I'd recommend adding it to your wishlist for when it's available."
+        }
+      ]
+    },
+    {
+      "id": "PR-TR-003",
+      "user_story": "US2 - Bike vs Bike+ Comparison",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the difference between the Peloton Bike and the Bike+?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here's a side-by-side comparison:\n\n| Feature | Peloton Bike ($1,445) | Peloton Bike+ ($2,495) |\n|---|---|---|\n| Screen size | 21.5\" HD | 23.8\" HD auto-rotating |\n| Auto resistance | \u274c | \u2705 (adjusts automatically in class) |\n| Apple GymKit | \u274c | \u2705 |\n| Swivel screen | \u274c | \u2705 (rotates for off-bike workouts) |\n| Rear-facing camera | \u274c | \u2705 |\n| Weight | 135 lbs | 140 lbs |\n\nThe Bike+ is worth the $1,050 premium if you value auto-resistance (a game-changer for immersive rides), Apple Watch integration, or want to use the screen for floor workouts. If you primarily want instructor-led rides without those extras, the standard Bike offers excellent value."
+        }
+      ]
+    },
+    {
+      "id": "PR-TR-004",
+      "user_story": "US2 - Bike vs Bike+ Comparison",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I have a $1,500 budget. Should I get the Bike or save up for the Bike+?"
+        },
+        {
+          "role": "assistant",
+          "content": "With a $1,500 budget, the Peloton Bike at $1,445 fits comfortably. Here's my honest take: for most riders, especially those new to Peloton, the standard Bike delivers the full class library experience and is virtually identical in terms of ride feel and content access. The Bike+ auto-resistance feature is excellent, but it requires an extra $1,050 \u2014 that money could also go toward an All-Access Membership for two years ($528/year) or fitness accessories. My recommendation: start with the Bike, and if you find yourself wanting auto-resistance after 6 months, Peloton often has trade-in programs. You'll lose nothing by starting with the Bike."
+        }
+      ]
+    },
+    {
+      "id": "PR-TR-005",
+      "user_story": "US3 - Cross-Sell Bundles for Tread",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What are the best items to suggest to customers who just bought a Tread?"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on transaction data, here are the top 5 cross-sell items for Tread purchasers, ranked by co-purchase rate:\n\n1. **Peloton Heart Rate Band \u2013 $64** | 68% co-purchase rate | 10% bundle discount available\n2. **Peloton Running Shoes \u2013 $125** | 54% co-purchase rate\n3. **Peloton Workout Mat \u2013 $60** | 47% co-purchase rate | 5% bundle discount available\n4. **Peloton Water Bottle \u2013 $25** | 43% co-purchase rate\n5. **Peloton Strength Dumbbells \u2013 $175** | 38% co-purchase rate | 10% bundle discount available\n\nThe Heart Rate Band + Workout Mat bundle with discounts is the highest-value pitch. The Dumbbells upsell is most effective when the customer mentions wanting to try strength or bootcamp classes alongside their Tread use."
+        }
+      ]
+    },
+    {
+      "id": "PR-TR-006",
+      "user_story": "US3 - Cross-Sell Bundles for Tread",
+      "messages": [
+        {
+          "role": "user",
+          "content": "A customer is buying a Tread and mentions they also want to do strength training. What should I recommend?"
+        },
+        {
+          "role": "assistant",
+          "content": "Great cross-sell opportunity. For a customer interested in both running and strength training, I'd recommend this bundle:\n\n**Primary:** Peloton Tread\n**Add-ons to suggest:**\n1. **Peloton Strength Dumbbells ($175)** \u2013 10% bundle discount = $157.50. They're needed for bootcamp and strength classes on the app.\n2. **Peloton Workout Mat ($60)** \u2013 5% discount = $57. Essential for floor-based strength movements.\n3. **Peloton Heart Rate Band ($64)** \u2013 10% discount = $57.60. Syncs with the Tread and strength classes for unified tracking.\n\n**Total with discounts:** $272.10 in accessories (vs. $299 without) \u2014 a compelling bundle story. Total bundle saves $26.90 and positions the customer for a complete home gym setup. This combo has a 71% closing rate when presented together."
+        }
+      ]
+    }
+  ]
+}
